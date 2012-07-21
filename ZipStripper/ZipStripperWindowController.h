@@ -13,6 +13,13 @@
 
 
 @interface ZipStripperWindowController : NSWindowController <NSTableViewDataSource>
+{
+    NSTableView* mTableView;
+    NSAlert* mAlert;
+    NSTimer* mAlertDismissTimer;
+    NSWindow* mProgressSheet;
+    NSProgressIndicator* mProgressIndicator;
+}
 
 @property (nonatomic, readwrite, retain) IBOutlet NSTableView* tableView;
 @property (nonatomic, readwrite, retain) ZipStripperArchive* document;

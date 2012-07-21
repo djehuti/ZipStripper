@@ -12,13 +12,6 @@
 
 
 @interface ZipStripperWindowController ()
-{
-    NSTableView* mTableView;
-    NSAlert* mAlert;
-    NSTimer* mAlertDismissTimer;
-    NSWindow* mProgressSheet;
-    NSProgressIndicator* mProgressIndicator;
-}
 
 - (void) p_syncTableViewWithDocument:(ZipStripperArchive*)document;
 - (void) p_dismissAlert:(NSTimer*)timer;
@@ -74,7 +67,7 @@
     if ([filesToBeRemoved count] > 0) {
         __block BOOL success = NO;
         __block BOOL done = NO;
-        dispatch_queue_t queue = dispatch_queue_create("com.djehuti.ZipStripper.processing", DISPATCH_QUEUE_CONCURRENT);
+        dispatch_queue_t queue = dispatch_queue_create("com.djehuti.ZipStripper.processing", NULL);
         dispatch_async(queue, ^{
             BOOL tempSuccess = [self.document go];
             dispatch_async(dispatch_get_main_queue(), ^{

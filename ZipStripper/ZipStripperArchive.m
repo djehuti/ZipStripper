@@ -16,10 +16,6 @@ static NSString* const kZipPath = @"/usr/bin/zip";
 
 
 @interface ZipStripperArchive ()
-{
-    NSArray* mFilesInArchive;
-    NSSet* mFilesToBeRemoved;
-}
 
 @property (nonatomic, readwrite, copy) NSArray* filesInArchive;
 
