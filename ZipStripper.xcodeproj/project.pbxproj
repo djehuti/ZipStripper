@@ -15,6 +15,7 @@
 		F28A6A8E15BA2B9000B4FFD0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28A6A8C15BA2B9000B4FFD0 /* MainMenu.xib */; };
 		F28A6A9615BA2DEC00B4FFD0 /* ZipStripperWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F28A6A9515BA2DEC00B4FFD0 /* ZipStripperWindowController.m */; };
 		F28A6A9C15BA2E5C00B4FFD0 /* ZipStripperAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F28A6A9B15BA2E5C00B4FFD0 /* ZipStripperAppDelegate.m */; };
+		F28B5D2F15BA63DF0044D7F1 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = F28B5D2E15BA63DF0044D7F1 /* README.markdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		F28A6A9515BA2DEC00B4FFD0 /* ZipStripperWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipStripperWindowController.m; sourceTree = "<group>"; };
 		F28A6A9A15BA2E5C00B4FFD0 /* ZipStripperAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipStripperAppDelegate.h; sourceTree = "<group>"; };
 		F28A6A9B15BA2E5C00B4FFD0 /* ZipStripperAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipStripperAppDelegate.m; sourceTree = "<group>"; };
+		F28B5D2E15BA63DF0044D7F1 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		F28A6A7A15BA2B9000B4FFD0 /* ZipStripper */ = {
 			isa = PBXGroup;
 			children = (
+				F28B5D2E15BA63DF0044D7F1 /* README.markdown */,
 				F28A6A9815BA2E2500B4FFD0 /* Model */,
 				F28A6A9915BA2E3600B4FFD0 /* Controller */,
 				F28A6A9715BA2DF600B4FFD0 /* Resources */,
@@ -189,6 +192,7 @@
 				F28A6A7F15BA2B9000B4FFD0 /* InfoPlist.strings in Resources */,
 				F28A6A8B15BA2B9000B4FFD0 /* ZipStripperArchive.xib in Resources */,
 				F28A6A8E15BA2B9000B4FFD0 /* MainMenu.xib in Resources */,
+				F28B5D2F15BA63DF0044D7F1 /* README.markdown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +326,7 @@
 				F28A6A9315BA2B9000B4FFD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
