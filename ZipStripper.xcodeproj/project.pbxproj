@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F28A6A7515BA2B9000B4FFD0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A6A7415BA2B9000B4FFD0 /* Cocoa.framework */; };
+		F28A6A7F15BA2B9000B4FFD0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F28A6A7D15BA2B9000B4FFD0 /* InfoPlist.strings */; };
+		F28A6A8115BA2B9000B4FFD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F28A6A8015BA2B9000B4FFD0 /* main.m */; };
+		F28A6A8815BA2B9000B4FFD0 /* ZipStripperArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = F28A6A8715BA2B9000B4FFD0 /* ZipStripperArchive.m */; };
+		F28A6A8B15BA2B9000B4FFD0 /* ZipStripperArchive.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28A6A8915BA2B9000B4FFD0 /* ZipStripperArchive.xib */; };
+		F28A6A8E15BA2B9000B4FFD0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28A6A8C15BA2B9000B4FFD0 /* MainMenu.xib */; };
+		F28A6A9615BA2DEC00B4FFD0 /* ZipStripperWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F28A6A9515BA2DEC00B4FFD0 /* ZipStripperWindowController.m */; };
+		F28A6A9C15BA2E5C00B4FFD0 /* ZipStripperAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F28A6A9B15BA2E5C00B4FFD0 /* ZipStripperAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F28A6A7015BA2B9000B4FFD0 /* ZipStripper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZipStripper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F28A6A7415BA2B9000B4FFD0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F28A6A7715BA2B9000B4FFD0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F28A6A7815BA2B9000B4FFD0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F28A6A7915BA2B9000B4FFD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F28A6A7C15BA2B9000B4FFD0 /* ZipStripper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZipStripper-Info.plist"; sourceTree = "<group>"; };
+		F28A6A7E15BA2B9000B4FFD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F28A6A8015BA2B9000B4FFD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F28A6A8215BA2B9000B4FFD0 /* ZipStripper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZipStripper-Prefix.pch"; sourceTree = "<group>"; };
+		F28A6A8615BA2B9000B4FFD0 /* ZipStripperArchive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZipStripperArchive.h; sourceTree = "<group>"; };
+		F28A6A8715BA2B9000B4FFD0 /* ZipStripperArchive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZipStripperArchive.m; sourceTree = "<group>"; };
+		F28A6A8A15BA2B9000B4FFD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZipStripperArchive.xib; sourceTree = "<group>"; };
+		F28A6A8D15BA2B9000B4FFD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F28A6A9415BA2DEC00B4FFD0 /* ZipStripperWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipStripperWindowController.h; sourceTree = "<group>"; };
+		F28A6A9515BA2DEC00B4FFD0 /* ZipStripperWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipStripperWindowController.m; sourceTree = "<group>"; };
+		F28A6A9A15BA2E5C00B4FFD0 /* ZipStripperAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipStripperAppDelegate.h; sourceTree = "<group>"; };
+		F28A6A9B15BA2E5C00B4FFD0 /* ZipStripperAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipStripperAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F28A6A6D15BA2B9000B4FFD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28A6A7515BA2B9000B4FFD0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F28A6A6515BA2B8F00B4FFD0 = {
+			isa = PBXGroup;
+			children = (
+				F28A6A7A15BA2B9000B4FFD0 /* ZipStripper */,
+				F28A6A7315BA2B9000B4FFD0 /* Frameworks */,
+				F28A6A7115BA2B9000B4FFD0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F28A6A7115BA2B9000B4FFD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F28A6A7015BA2B9000B4FFD0 /* ZipStripper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F28A6A7315BA2B9000B4FFD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F28A6A7415BA2B9000B4FFD0 /* Cocoa.framework */,
+				F28A6A7615BA2B9000B4FFD0 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F28A6A7615BA2B9000B4FFD0 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F28A6A7715BA2B9000B4FFD0 /* AppKit.framework */,
+				F28A6A7815BA2B9000B4FFD0 /* CoreData.framework */,
+				F28A6A7915BA2B9000B4FFD0 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F28A6A7A15BA2B9000B4FFD0 /* ZipStripper */ = {
+			isa = PBXGroup;
+			children = (
+				F28A6A9815BA2E2500B4FFD0 /* Model */,
+				F28A6A9915BA2E3600B4FFD0 /* Controller */,
+				F28A6A9715BA2DF600B4FFD0 /* Resources */,
+				F28A6A7B15BA2B9000B4FFD0 /* Supporting Files */,
+			);
+			path = ZipStripper;
+			sourceTree = "<group>";
+		};
+		F28A6A7B15BA2B9000B4FFD0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F28A6A7C15BA2B9000B4FFD0 /* ZipStripper-Info.plist */,
+				F28A6A7D15BA2B9000B4FFD0 /* InfoPlist.strings */,
+				F28A6A8015BA2B9000B4FFD0 /* main.m */,
+				F28A6A8215BA2B9000B4FFD0 /* ZipStripper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F28A6A9715BA2DF600B4FFD0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F28A6A8C15BA2B9000B4FFD0 /* MainMenu.xib */,
+				F28A6A8915BA2B9000B4FFD0 /* ZipStripperArchive.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F28A6A9815BA2E2500B4FFD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F28A6A8615BA2B9000B4FFD0 /* ZipStripperArchive.h */,
+				F28A6A8715BA2B9000B4FFD0 /* ZipStripperArchive.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F28A6A9915BA2E3600B4FFD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F28A6A9415BA2DEC00B4FFD0 /* ZipStripperWindowController.h */,
+				F28A6A9515BA2DEC00B4FFD0 /* ZipStripperWindowController.m */,
+				F28A6A9A15BA2E5C00B4FFD0 /* ZipStripperAppDelegate.h */,
+				F28A6A9B15BA2E5C00B4FFD0 /* ZipStripperAppDelegate.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F28A6A6F15BA2B9000B4FFD0 /* ZipStripper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F28A6A9115BA2B9000B4FFD0 /* Build configuration list for PBXNativeTarget "ZipStripper" */;
+			buildPhases = (
+				F28A6A6C15BA2B9000B4FFD0 /* Sources */,
+				F28A6A6D15BA2B9000B4FFD0 /* Frameworks */,
+				F28A6A6E15BA2B9000B4FFD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZipStripper;
+			productName = ZipStripper;
+			productReference = F28A6A7015BA2B9000B4FFD0 /* ZipStripper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F28A6A6715BA2B8F00B4FFD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Ben Cox";
+			};
+			buildConfigurationList = F28A6A6A15BA2B8F00B4FFD0 /* Build configuration list for PBXProject "ZipStripper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F28A6A6515BA2B8F00B4FFD0;
+			productRefGroup = F28A6A7115BA2B9000B4FFD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F28A6A6F15BA2B9000B4FFD0 /* ZipStripper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F28A6A6E15BA2B9000B4FFD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28A6A7F15BA2B9000B4FFD0 /* InfoPlist.strings in Resources */,
+				F28A6A8B15BA2B9000B4FFD0 /* ZipStripperArchive.xib in Resources */,
+				F28A6A8E15BA2B9000B4FFD0 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F28A6A6C15BA2B9000B4FFD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28A6A8115BA2B9000B4FFD0 /* main.m in Sources */,
+				F28A6A8815BA2B9000B4FFD0 /* ZipStripperArchive.m in Sources */,
+				F28A6A9615BA2DEC00B4FFD0 /* ZipStripperWindowController.m in Sources */,
+				F28A6A9C15BA2E5C00B4FFD0 /* ZipStripperAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F28A6A7D15BA2B9000B4FFD0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F28A6A7E15BA2B9000B4FFD0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F28A6A8915BA2B9000B4FFD0 /* ZipStripperArchive.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F28A6A8A15BA2B9000B4FFD0 /* en */,
+			);
+			name = ZipStripperArchive.xib;
+			sourceTree = "<group>";
+		};
+		F28A6A8C15BA2B9000B4FFD0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F28A6A8D15BA2B9000B4FFD0 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F28A6A8F15BA2B9000B4FFD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F28A6A9015BA2B9000B4FFD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F28A6A9215BA2B9000B4FFD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZipStripper/ZipStripper-Prefix.pch";
+				INFOPLIST_FILE = "ZipStripper/ZipStripper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F28A6A9315BA2B9000B4FFD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZipStripper/ZipStripper-Prefix.pch";
+				INFOPLIST_FILE = "ZipStripper/ZipStripper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F28A6A6A15BA2B8F00B4FFD0 /* Build configuration list for PBXProject "ZipStripper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F28A6A8F15BA2B9000B4FFD0 /* Debug */,
+				F28A6A9015BA2B9000B4FFD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F28A6A9115BA2B9000B4FFD0 /* Build configuration list for PBXNativeTarget "ZipStripper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F28A6A9215BA2B9000B4FFD0 /* Debug */,
+				F28A6A9315BA2B9000B4FFD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F28A6A6715BA2B8F00B4FFD0 /* Project object */;
+}
