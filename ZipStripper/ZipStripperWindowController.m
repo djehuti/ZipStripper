@@ -14,6 +14,7 @@
 @interface ZipStripperWindowController ()
 
 - (void) p_syncTableViewWithDocument:(ZipStripperArchive*)document;
+- (void) p_setRemoveButtonEnabledState;
 - (void) p_dismissAlert:(NSTimer*)timer;
 - (void) p_alertDidEnd:(NSAlert*)alert returnCode:(NSInteger)returnCode contextInfo:(void*)contextInfo;
 
@@ -25,6 +26,7 @@
 @synthesize tableView = mTableView;
 @synthesize progressSheet = mProgressSheet;
 @synthesize progressIndicator = mProgressIndicator;
+@synthesize removeButton = mRemoveButton;
 
 - (void) dealloc
 {
@@ -38,6 +40,8 @@
     mProgressSheet = nil;
     [mProgressIndicator release];
     mProgressIndicator = nil;
+    [mRemoveButton release];
+    mRemoveButton = nil;
     [super dealloc];
 }
 
@@ -122,6 +126,13 @@
     return [self.document.filesInArchive objectAtIndex:row];
 }
 
+#pragma mark NSTableViewDelegate
+
+- (void) tableViewSelectionDidChange:(NSNotification*)notification
+{
+    [self p_setRemoveButtonEnabledState];
+}
+
 #pragma mark Private Methods
 
 - (void) p_syncTableViewWithDocument:(ZipStripperArchive*)document
@@ -133,6 +144,16 @@
             [indices addIndex:[document.filesInArchive indexOfObject:filename]];
         }
         [mTableView selectRowIndexes:indices byExtendingSelection:NO];
+    }
+    [self p_setRemoveButtonEnabledState];
+}
+
+- (void) p_setRemoveButtonEnabledState
+{
+    if (self.document && mTableView && mRemoveButton) {
+        mRemoveButton.enabled = ([[mTableView selectedRowIndexes] count] > 0);
+    } else {
+        mRemoveButton.enabled = NO;
     }
 }
 
