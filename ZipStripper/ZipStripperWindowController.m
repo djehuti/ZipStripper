@@ -81,6 +81,7 @@
         while (!done) {
             [mainRunLoop runMode:NSModalPanelRunLoopMode beforeDate:[NSDate distantFuture]];
         }
+        dispatch_release(queue);
         [mProgressIndicator stopAnimation:self];
         [NSApp endSheet:mProgressSheet];
         [mProgressSheet orderOut:self];
