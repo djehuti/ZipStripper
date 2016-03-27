@@ -27,6 +27,10 @@ static NSString* const kZipPath = @"/usr/bin/zip";
 #pragma mark -
 
 @implementation ZipStripperArchive
+{
+    NSArray* mFilesInArchive;
+    NSSet* mFilesToBeRemoved;
+}
 
 #pragma mark Properties
 

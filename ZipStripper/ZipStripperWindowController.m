@@ -22,6 +22,14 @@
 
 
 @implementation ZipStripperWindowController
+{
+    NSTableView* mTableView;
+    NSAlert* mAlert;
+    NSTimer* mAlertDismissTimer;
+    NSWindow* mProgressSheet;
+    NSProgressIndicator* mProgressIndicator;
+    NSButton* mRemoveButton;
+}
 
 @synthesize tableView = mTableView;
 @synthesize progressSheet = mProgressSheet;

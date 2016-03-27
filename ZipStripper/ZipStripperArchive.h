@@ -11,10 +11,6 @@
 
 
 @interface ZipStripperArchive : NSDocument
-{
-    NSArray* mFilesInArchive;
-    NSSet* mFilesToBeRemoved;
-}
 
 @property (nonatomic, readonly, copy) NSArray* filesInArchive;
 @property (nonatomic, readwrite, copy) NSSet* filesToBeRemoved;
