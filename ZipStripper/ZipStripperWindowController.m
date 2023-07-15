@@ -87,7 +87,7 @@
                 done = YES;
             });
         });
-        [NSApp beginSheet:mProgressSheet modalForWindow:self.window modalDelegate:self didEndSelector:NULL contextInfo:NULL];
+        [self.window beginSheet:mProgressSheet completionHandler:nil];
         [mProgressIndicator startAnimation:self];
         NSRunLoop* mainRunLoop = [NSRunLoop mainRunLoop];
         while (!done) {
@@ -99,24 +99,23 @@
         [mProgressSheet orderOut:self];
 
         if (success) {
-            mAlert.alertStyle = NSInformationalAlertStyle;
+            mAlert.alertStyle = NSAlertStyleInformational;
             mAlert.messageText = NSLocalizedString(@"Finished", @"Finished alert title");
             mAlert.informativeText = [NSString stringWithFormat:NSLocalizedString(@"The file '%@' was processed successfully.", @"Finished alert text"), [self.document.fileURL path]];
         } else {
-            mAlert.alertStyle = NSWarningAlertStyle;
+            mAlert.alertStyle = NSAlertStyleWarning;
             mAlert.messageText = NSLocalizedString(@"Failed", @"Failed alert title");
             mAlert.informativeText = [NSString stringWithFormat:NSLocalizedString(@"Failed to process file '%@'.", @"Failed alert text"), [self.document.fileURL path]];
             autoDismiss = NO;
         }
     } else {
-        mAlert.alertStyle = NSInformationalAlertStyle;
+        mAlert.alertStyle = NSAlertStyleInformational;
         mAlert.messageText = NSLocalizedString(@"Nothing to do", @"Nothing to do alert title");
         mAlert.informativeText = NSLocalizedString(@"No files were selected for removal.", @"no files selected text");
     }
-    [mAlert beginSheetModalForWindow:self.window
-                       modalDelegate:self
-                      didEndSelector:@selector(p_alertDidEnd:returnCode:contextInfo:)
-                         contextInfo:NULL];
+    [mAlert beginSheetModalForWindow:self.window completionHandler:^(NSModalResponse returnCode) {
+        [self p_alertDidEnd:mAlert returnCode:returnCode contextInfo:NULL];
+    }];
     if (autoDismiss) {
         mAlertDismissTimer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(p_dismissAlert:) userInfo:nil repeats:NO];
     }
